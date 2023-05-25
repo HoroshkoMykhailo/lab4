@@ -3,6 +3,7 @@
 #include <vector>
 #include <stdexcept>
 using namespace std;
+#pragma pack(push, 1)
 typedef struct {
     int8_t id[2];            // Завжди дві літери 'B' і 'M'
     int32_t filesize;        // Розмір файла в байтах
@@ -20,6 +21,9 @@ typedef struct {
     int32_t biClrUsed;       // Для індексованих зображень, можна поставити 0L
     int32_t biClrImportant;  // Те саме
     } BMPHEAD;
+
+#pragma pack(pop)
+
 typedef struct {
      int8_t redComponent;
      int8_t greenComponent;
