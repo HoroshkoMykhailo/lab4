@@ -1,10 +1,15 @@
 #include "file_structures.h"
 class bmpfile{
-public:
     BMPHEAD head;
     int pad;
     vector<vector<PIXELDATA>> data;
+public:
     bmpfile();
+    BMPHEAD& gethead();
+    vector<vector<PIXELDATA>>& getdata();
+    void sethead(BMPHEAD);
+    void setdata(vector<vector<PIXELDATA>>);
+    int getpad();
     void changepad(int);
 };
 
