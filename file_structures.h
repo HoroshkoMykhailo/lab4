@@ -20,7 +20,7 @@ typedef struct {
     int32_t biYPelsPerMeter; // Те саме, по висоті
     int32_t biClrUsed;       // Для індексованих зображень, можна поставити 0L
     int32_t biClrImportant;  // Те саме
-    } BMPHEAD;
+} BMPHEAD;
 
 #pragma pack(pop)
 
