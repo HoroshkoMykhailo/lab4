@@ -2,8 +2,10 @@
 class bmpfile{
 public:
     BMPHEAD head;
-    vector<PIXELDATA> data;
+    int pad;
+    vector<vector<PIXELDATA>> data;
     bmpfile();
+    void changepad(int);
 };
 
 class reader{
