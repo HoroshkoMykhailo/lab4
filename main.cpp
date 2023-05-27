@@ -1,6 +1,10 @@
-#include "classes.h"
+#include "read_and_out.h"
 int main(int argc, char* argv[]){
     try{
+        if(argc != 4){
+            cerr<< "You have not entered 3 arguments in command line";
+            return 1;
+        }
         string inp = "C:\\Visual studio\\codes\\4\\examples_4\\", out = inp;
         inp.append(argv[1]);
         out.append(argv[2]);
